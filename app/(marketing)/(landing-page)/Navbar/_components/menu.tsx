@@ -15,6 +15,10 @@ import {
 } from "@/components/ui/navigation-menu";
 import Logo from "./logo";
 
+interface CustomStyle extends React.CSSProperties {
+  "--background"?: string;
+}
+
 const components: { title: string; description: string }[] = [
   {
     title: "Insightful Interactions",
@@ -48,10 +52,17 @@ const components: { title: string; description: string }[] = [
   },
 ];
 
+const NavigationMenuListStyle: CustomStyle = {
+  "--background": "transparent",
+};
+
 export function NavigationMenuBar() {
   return (
     <NavigationMenu>
-      <NavigationMenuList className="hidden md:flex md:space-x-4">
+      <NavigationMenuList
+        className="hidden md:flex md:space-x-4"
+        style={NavigationMenuListStyle}
+      >
         <NavigationMenuItem>
           <NavigationMenuTrigger>Features</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -68,8 +79,8 @@ export function NavigationMenuBar() {
                       Fandrum+
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      "Connecting Creators, Amplifying Voices: Unite with Fans
-                      on Fandrum+!.
+                      Connecting Creators, Amplifying Voices: Unite with Fans on
+                      Fandrum+!.
                     </p>
                   </a>
                 </NavigationMenuLink>

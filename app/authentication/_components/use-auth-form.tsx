@@ -7,6 +7,7 @@ import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -40,12 +41,14 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
               disabled={isLoading}
             />
           </div>
-          <Button disabled={isLoading}>
-            {isLoading && (
-              <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
-            )}
-            Sign In with Email
-          </Button>
+          <Link href="/dashboard">
+            <Button disabled={isLoading}>
+              {isLoading && (
+                <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
+              )}
+              Sign In with Email
+            </Button>
+          </Link>
         </div>
       </form>
       <div className="relative">
@@ -58,14 +61,16 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
           </span>
         </div>
       </div>
-      <Button variant="outline" type="button" disabled={isLoading}>
-        {isLoading ? (
-          <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
-        ) : (
-          <Icons.gitHub className="mr-2 h-4 w-4" />
-        )}{" "}
-        Github
-      </Button>
+      <Link href="/dashboard">
+        <Button variant="outline" type="button" disabled={isLoading}>
+          {isLoading ? (
+            <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
+          ) : (
+            <Icons.twitter className="mr-2 h-4 w-4" />
+          )}{" "}
+          Twitter
+        </Button>
+      </Link>
     </div>
   );
 }

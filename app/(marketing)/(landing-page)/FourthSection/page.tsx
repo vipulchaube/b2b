@@ -49,7 +49,7 @@ const FourthSection = () => {
           <div className="md:flex items-center md:space-x-60 space-y-10 p-10">
             <div className="">
               <Image
-                src="/images/tab-1.webp"
+                src="/images/dashboard.png"
                 alt="Image"
                 width={700}
                 height={700}
@@ -71,7 +71,7 @@ const FourthSection = () => {
           <div className="md:flex items-center md:space-x-60 space-y-10 p-10">
             <div className="">
               <Image
-                src="/images/tab-2.webp"
+                src="/images/campaign.png"
                 alt="Image"
                 width={700}
                 height={700}
@@ -94,7 +94,7 @@ const FourthSection = () => {
           <div className="md:flex items-center md:space-x-60 space-y-10 p-10">
             <div className="">
               <Image
-                src="/images/tab-1.webp"
+                src="/images/dashboard.png"
                 alt="Image"
                 width={700}
                 height={700}

@@ -56,10 +56,10 @@ const FirstSection = () => {
           className="px-10 md:px-0"
         >
           <Image
-            src="/images/tab-1.webp"
+            src="/images/dashboard.png"
             alt="Dashboard Image"
-            width={500}
-            height={500}
+            width={700}
+            height={700}
           />
         </motion.div>
 
@@ -69,10 +69,10 @@ const FirstSection = () => {
           className="px-10 md:px-0"
         >
           <Image
-            src="/images/tab-2.webp"
+            src="/images/campaign.png"
             alt="Campaign Manager Image"
-            width={500}
-            height={500}
+            width={700}
+            height={700}
           />
         </motion.div>
 
@@ -82,10 +82,10 @@ const FirstSection = () => {
           className="px-10 md:px-0  "
         >
           <Image
-            src="/images/tab-3.webp"
+            src="/images/dashboard.png"
             alt="Community Page Image"
-            width={500}
-            height={500}
+            width={700}
+            height={700}
           />
         </motion.div>
       </div>

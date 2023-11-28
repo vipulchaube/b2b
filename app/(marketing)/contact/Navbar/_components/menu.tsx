@@ -68,8 +68,8 @@ export function NavigationMenuBar() {
                       Fandrum+
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      "Connecting Creators, Amplifying Voices: Unite with Fans
-                      on Fandrum+!.
+                      Connecting Creators, Amplifying Voices: Unite with Fans on
+                      Fandrum+!.
                     </p>
                   </a>
                 </NavigationMenuLink>

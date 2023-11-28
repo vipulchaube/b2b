@@ -12,6 +12,10 @@ import { DemoPaymentMethod } from "./_components/payment-method";
 import { DemoReportAnIssue } from "./_components/report-an-issue";
 import { DemoShareDocument } from "./_components/share-document";
 import { DemoTeamMembers } from "./_components/team-members";
+import TeamSwitcher from "../_components/team-switcher";
+import { MainNav } from "../_components/main-nav";
+import { Search } from "../_components/search";
+import { UserNav } from "../_components/user-nav";
 
 export const metadata: Metadata = {
   title: "Cards",
@@ -51,6 +55,16 @@ export default function CardsPage() {
           alt="Cards"
           className="hidden dark:block"
         />
+      </div>
+      <div className="border-b">
+        <div className="flex h-16 items-center px-4">
+          <TeamSwitcher />
+          <MainNav className="mx-6" />
+          <div className="ml-auto flex items-center space-x-4">
+            <Search />
+            <UserNav />
+          </div>
+        </div>
       </div>
       <div className="hidden items-start justify-center gap-6 rounded-lg p-8 md:grid lg:grid-cols-2 xl:grid-cols-3">
         <div className="col-span-2 grid items-start gap-6 lg:col-span-1">

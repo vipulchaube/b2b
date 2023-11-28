@@ -3,6 +3,10 @@ import Image from "next/image";
 
 import { Separator } from "@/components/ui/separator";
 import { SidebarNav } from "./_components/sidebar-nav";
+import TeamSwitcher from "../_components/team-switcher";
+import { MainNav } from "../_components/main-nav";
+import { Search } from "../_components/search";
+import { UserNav } from "../_components/user-nav";
 
 export const metadata: Metadata = {
   title: "Forms",
@@ -12,23 +16,23 @@ export const metadata: Metadata = {
 const sidebarNavItems = [
   {
     title: "Profile",
-    href: "/dashboard/forms",
+    href: "/dashboard/settings",
   },
   {
     title: "Account",
-    href: "/dashboard/forms/account",
+    href: "/dashboard/settings/account",
   },
   {
     title: "Appearance",
-    href: "/dashboard/forms/appearance",
+    href: "/dashboard/settings/appearance",
   },
   {
     title: "Notifications",
-    href: "/dashboard/forms/notifications",
+    href: "/dashboard/settings/notifications",
   },
   {
     title: "Display",
-    href: "/dashboard/forms/display",
+    href: "/dashboard/settings/display",
   },
 ];
 
@@ -54,6 +58,16 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
           alt="Forms"
           className="hidden dark:block"
         />
+      </div>
+      <div className="border-b">
+        <div className="flex h-16 items-center px-4">
+          <TeamSwitcher />
+          <MainNav className="mx-6" />
+          <div className="ml-auto flex items-center space-x-4">
+            <Search />
+            <UserNav />
+          </div>
+        </div>
       </div>
       <div className="hidden space-y-6 p-10 pb-16 md:block">
         <div className="space-y-0.5">

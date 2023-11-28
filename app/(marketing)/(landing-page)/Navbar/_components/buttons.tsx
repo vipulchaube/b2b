@@ -64,11 +64,16 @@ const ActionButtons = () => {
         <Link href="/contact" className="">
           Contact Sales
         </Link>
-
-        <Button className="text-md" variant={"ghost"}>
-          Sign In
-        </Button>
-        <Button className="bg-[#000] text-md rounded-sm ">Get Started</Button>
+        <Link href="/dashboard">
+          <Button className="text-md" variant={"ghost"}>
+            Sign In
+          </Button>
+        </Link>
+        <Link href="/authentication">
+          <Button className="bg-[#f10035] text-md text-white rounded-sm ">
+            Get Started
+          </Button>
+        </Link>
 
         <div></div>
       </div>

@@ -8,6 +8,9 @@ import { columns } from "./_components/columns";
 import { DataTable } from "./_components/data-table";
 import { UserNav } from "./_components/user-nav";
 import { taskSchema } from "./data/schema";
+import TeamSwitcher from "../_components/team-switcher";
+import { MainNav } from "../_components/main-nav";
+import { Search } from "../_components/search";
 
 export const metadata: Metadata = {
   title: "Tasks",
@@ -17,7 +20,7 @@ export const metadata: Metadata = {
 // Simulate a database read for tasks.
 async function getTasks() {
   const data = await fs.readFile(
-    path.join(process.cwd(), "app/dashboard/tasks/data/tasks.json")
+    path.join(process.cwd(), "app/dashboard/campaigns/data/tasks.json")
   );
 
   const tasks = JSON.parse(data.toString());
@@ -47,6 +50,16 @@ export default async function TaskPage() {
         />
       </div>
       <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
+        <div className="border-b">
+          <div className="flex h-16 items-center px-4">
+            <TeamSwitcher />
+            <MainNav className="mx-6" />
+            <div className="ml-auto flex items-center space-x-4">
+              <Search />
+              <UserNav />
+            </div>
+          </div>
+        </div>
         <div className="flex items-center justify-between space-y-2">
           <div>
             <h2 className="text-2xl font-bold tracking-tight">Welcome back!</h2>
@@ -54,9 +67,7 @@ export default async function TaskPage() {
               Here&apos;s a list of your campaigns for this month!
             </p>
           </div>
-          <div className="flex items-center space-x-2">
-            <UserNav />
-          </div>
+          <div className="flex items-center space-x-2">{/* <UserNav /> */}</div>
         </div>
         <DataTable data={tasks} columns={columns} />
       </div>

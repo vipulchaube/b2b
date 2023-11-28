@@ -27,13 +27,14 @@ import { Input } from "@/components/ui/input";
 
 import { useToast } from "@/components/ui/use-toast";
 import { Textarea } from "@/components/ui/textarea";
+import Image from "next/image";
 
 const FormSchema = z.object({
   first_name: z.string(),
   last_name: z.string(),
   email: z.string().email(),
   phone_number: z.string(),
-  country: z.enum(["canada", "usa"]),
+  country: z.enum(["india", "usa"]),
   company_size: z.enum([
     "1-10k",
     "11-50k",
@@ -293,7 +294,7 @@ export default function FirstSection() {
         ) : (
           <div className="text-2xl h-screen text-green-400 items-center space-y-20 flex flex-col ">
             <div className="">
-              <img src="/videos/check.gif" className="h-28 w-28" />
+              <Image src="/videos/check.gif" alt="gif" className="h-28 w-28" />
             </div>
           </div>
         )}

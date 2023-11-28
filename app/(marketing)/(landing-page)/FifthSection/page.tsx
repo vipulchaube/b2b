@@ -93,7 +93,7 @@ const FifthSection = () => {
       </div>
 
       <Image
-        src="/images/tab-6.webp"
+        src="/images/dashboard.png"
         alt="Image"
         width={700}
         height={700}

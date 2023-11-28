@@ -19,7 +19,7 @@ const tabs = [
       "Engagement Analytics: Track engagement metrics across platforms to optimize your marketing strategies.",
     feature3:
       "Campaign Integration: Seamlessly integrate and manage cross-platform marketing campaigns from a single dashboard.",
-    image: "/images/tab-1.webp",
+    image: "/images/dashboard.png",
   },
   {
     name: "The Programming Pros",
@@ -31,7 +31,7 @@ const tabs = [
       "Content Synchronization: Align your programming with audience trends and preferences, enhancing viewer satisfaction.",
     feature3:
       "Brand Alignment: Assess and strengthen the association between programs and sponsoring brands for maximum impact.",
-    image: "/images/tab-2.webp",
+    image: "/images/campaign.png",
   },
 
   {
@@ -43,7 +43,7 @@ const tabs = [
       "Interaction Optimization: Engage with your audience more effectively with data-driven interaction strategies.",
     feature3:
       "Content Performance Tracking: Monitor and analyze the performance of your social media content across different platforms.",
-    image: "/images/tab-3.webp",
+    image: "/images/dashboard.png",
   },
   {
     name: "The Content Champions",
@@ -54,7 +54,7 @@ const tabs = [
       "Collaboration Opportunities: Discover and connect with potential collaborators and sponsors to expand your content’s reach.",
     feature3:
       "Audience Engagement Tools: Utilize advanced tools to measure and enhance audience engagement with your content.",
-    image: "/images/tab-4.webp",
+    image: "/images/campaign.png",
   },
   {
     name: "The Influencer Innovators",
@@ -65,7 +65,7 @@ const tabs = [
       "Monetization Metrics: Track the financial performance of your content and identify new monetization opportunities.",
     feature3:
       "Network Expansion: Connect with other creators, brands, and media teams to grow your influence and reach.",
-    image: "/images/tab-1.webp",
+    image: "/images/dashboard.png",
   },
 ];
 

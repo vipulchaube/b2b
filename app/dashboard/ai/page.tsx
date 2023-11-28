@@ -24,6 +24,10 @@ import { TemperatureSelector } from "./_components/temperature-selector";
 import { TopPSelector } from "./_components/top-p-selector";
 import { models, types } from "./data/models";
 import { presets } from "./data/presets";
+import TeamSwitcher from "../_components/team-switcher";
+import { MainNav } from "../_components/main-nav";
+import { Search } from "../_components/search";
+import { UserNav } from "../_components/user-nav";
 
 export const metadata: Metadata = {
   title: "Playground",
@@ -50,6 +54,16 @@ export default function PlaygroundPage() {
         />
       </div>
       <div className="hidden h-full flex-col md:flex">
+        <div className="border-b">
+          <div className="flex h-16 items-center px-4">
+            <TeamSwitcher />
+            <MainNav className="mx-6" />
+            <div className="ml-auto flex items-center space-x-4">
+              <Search />
+              <UserNav />
+            </div>
+          </div>
+        </div>
         <div className="container flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16">
           <h2 className="text-lg font-semibold"> AI Playground</h2>
           <div className="ml-auto flex w-full space-x-2 sm:justify-end">

@@ -15,7 +15,7 @@ const SeventhSection = () => {
       <div className="md:flex md:px-20 md:space-x-10 space-y-10 md:space-y-0 ">
         <div className="rounded-sm   bg-white p-8">
           <Image
-            src="/images/tab-1.webp"
+            src="/images/dashboard.png"
             alt="Picture of the author"
             width={400}
             height={400}
@@ -33,7 +33,7 @@ const SeventhSection = () => {
 
         <div className="rounded-sm   bg-white p-8">
           <Image
-            src="/images/tab-3.webp"
+            src="/images/campaign.png"
             alt="Picture of the author"
             width={400}
             height={400}
@@ -51,7 +51,7 @@ const SeventhSection = () => {
 
         <div className="rounded-sm   bg-white p-8">
           <Image
-            src="/images/tab-3.webp"
+            src="/images/dashboard.png"
             alt="Picture of the author"
             width={400}
             height={400}
