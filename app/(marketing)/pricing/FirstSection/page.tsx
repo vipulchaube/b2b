@@ -22,7 +22,7 @@ const FirstSection = () => {
         <div className="text-gray-800 text-xl">PRICING</div>
         <div className="text-5xl">Easily organize your work. Start free.</div>
         <div className="text-2xl text-gray-500">
-          Access Birds features. No credit card required
+          Access Fandrum features. Subscription required
         </div>
       </div>
 
@@ -65,7 +65,7 @@ const FirstSection = () => {
           <div className="border-gray-500 p-10 rounded-lg border space-y-8 md:w-1/2 ">
             <div className="text-2xl">Basic</div>
             <div className="text-xl">
-              For teams that need to create project plans with confidence.
+              For teams that need to deliver the best in class content.
             </div>
 
             <div className="text-5xl font-semibold">US $0</div>
@@ -82,7 +82,7 @@ const FirstSection = () => {
 
             <div className="text-2xl underline text-center">Purchase Now</div>
 
-            <div>Manage tasks and personal to-dos:</div>
+            <div>Analyse Content:</div>
             <div className="flex space-y-6 flex-col">
               <div className="flex space-x-6">
                 <div>
@@ -106,19 +106,19 @@ const FirstSection = () => {
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">5 GB Storage</div>
+                <div className="text-gray-500">5 Channels</div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Unlimited Projects</div>
+                <div className="text-gray-500">Unlimited Campaigns</div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Unlimited Project boards</div>
+                <div className="text-gray-500">10 AI prompts</div>
               </div>
               <div className="flex space-x-6">
                 <div>
@@ -136,25 +136,25 @@ const FirstSection = () => {
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">1 Company</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">1 Team</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">1 Owner</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Custom Domain</div>
+                <div className="text-gray-500"></div>
               </div>
             </div>
           </div>
@@ -162,14 +162,14 @@ const FirstSection = () => {
           <div className="border-purple-500 p-10 rounded-lg border space-y-8 md:w-1/2">
             <div className="text-2xl">Premium</div>
             <div className="text-xl">
-              For teams that need to create project plans with confidence.
+              For teams that need to create content plans with confidence.
             </div>
             {isMonthlyPlan ? (
               <div>
-                <div className="text-5xl font-semibold">US $12.00</div>
+                <div className="text-5xl font-semibold"></div>
               </div>
             ) : (
-              <div className="text-5xl font-semibold">US $129.99</div>
+              <div className="text-5xl font-semibold"></div>
             )}
 
             <div className="">
@@ -190,73 +190,73 @@ const FirstSection = () => {
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Unlimited free viewers</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Unlimited Participants</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">100 GB Storage</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Unlimited Projects</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Unlimited Project boards</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Forms</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Rules</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Permissions</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Templates</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Builder</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Search</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Milestones</div>
+                <div className="text-gray-500"></div>
               </div>
             </div>
           </div>
@@ -264,14 +264,14 @@ const FirstSection = () => {
           <div className="border-teal-500 p-10 rounded-lg border space-y-8 md:w-1/2">
             <div className="text-2xl">Business</div>
             <div className="text-xl">
-              For teams that need to create project plans with confidence.
+              For teams that need to manage content with confidence.
             </div>
             {isMonthlyPlan ? (
               <div>
-                <div className="text-5xl font-semibold">US $39.99</div>
+                <div className="text-5xl font-semibold"></div>
               </div>
             ) : (
-              <div className="text-5xl font-semibold">US $329.99</div>
+              <div className="text-5xl font-semibold"></div>
             )}
 
             <div className="">
@@ -298,7 +298,7 @@ const FirstSection = () => {
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Product Roadmap</div>
+                <div className="text-gray-500">Content Roadmap</div>
               </div>
               <div className="flex space-x-6">
                 <div>
@@ -316,7 +316,7 @@ const FirstSection = () => {
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Gantt Chart</div>
+                <div className="text-gray-500">Charts</div>
               </div>
               <div className="flex space-x-6">
                 <div>
@@ -328,37 +328,37 @@ const FirstSection = () => {
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Forms</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Rules</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Permissions</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Templates</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Builder</div>
+                <div className="text-gray-500"></div>
               </div>
               <div className="flex space-x-6">
                 <div>
                   <Check size={24} />
                 </div>
-                <div className="text-gray-500">Search</div>
+                <div className="text-gray-500"></div>
               </div>
             </div>
           </div>

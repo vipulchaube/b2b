@@ -15,48 +15,54 @@ import {
 } from "@/components/ui/navigation-menu";
 import Logo from "./logo";
 
+interface CustomStyle extends React.CSSProperties {
+  "--background"?: string;
+}
+
 const components: { title: string; description: string }[] = [
   {
-    title: "Frozen",
+    title: "Insightful Interactions",
 
     description:
-      "Recommended template for most use cases. Includes all the components you need to get started.",
+      "Harness the power of data with our Analytics Dashboard, offering deep insights into fan engagement and content performance.",
   },
   {
-    title: "Swift",
+    title: "Campaign Central",
 
     description:
-      "A template with a minimal set of components. Use this template if you want to build your own components.",
+      "Streamline your marketing efforts with our Campaign Manager, enabling effective planning, execution, and tracking of your promotional activities.",
   },
   {
-    title: "Tuscany",
+    title: "Creator Connect",
 
     description:
-      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+      "Join the Associate Program of your favorite creators, broadcasters, and advertisers to form lucrative partnerships, expanding your network and unlocking new opportunities.",
   },
   {
-    title: "Amber",
-
-    description: "Great for building a marketing or landing page.",
-  },
-  {
-    title: "Tide",
+    title: "TRP Predictor",
 
     description:
-      "Layered template with a sidebar navigation. Great for building a dashboard or admin panel.",
+      "Leverage our cutting-edge LLM technology to accurately forecast Television Rating Points, ensuring your content reaches its ideal audience.",
   },
   {
-    title: "Mint",
+    title: "Brand Harmony Scanner",
 
     description:
-      "Nice template for building a blog or a content-heavy website.",
+      "Utilize our advanced LLM tool to evaluate and enhance the synergy between your programs and brand associations, optimizing your advertising impact.",
   },
 ];
+
+const NavigationMenuListStyle: CustomStyle = {
+  "--background": "transparent",
+};
 
 export function NavigationMenuBar() {
   return (
     <NavigationMenu>
-      <NavigationMenuList className="hidden md:flex md:space-x-4">
+      <NavigationMenuList
+        className="hidden md:flex md:space-x-4"
+        style={NavigationMenuListStyle}
+      >
         <NavigationMenuItem>
           <NavigationMenuTrigger>Features</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -70,40 +76,29 @@ export function NavigationMenuBar() {
                     <Logo />
 
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Bird Software
+                      Fandrum+
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      eCommerce for everyone.
+                      Connecting Creators, Amplifying Voices: Unite with Fans on
+                      Fandrum+!.
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/product" title="Product">
-                Learn about the project goals and how to get started.
+              <ListItem href="/product" title="Analytics">
+                Learn about the content analytics and how to get started.
               </ListItem>
-              <ListItem href="/" title="Demo">
-                How to build a store in 60 seconds with Bird.
+              <ListItem href="/" title="Campaigns">
+                How to build a campaign in 60 seconds with Fandrum+.
               </ListItem>
               <ListItem href="/" title="Community">
-                Join the community and get help with your project.
+                Amplify your message; extend your advocates.
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem key={component.title} title={component.title}>
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (

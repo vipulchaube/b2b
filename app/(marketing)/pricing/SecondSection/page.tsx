@@ -6,25 +6,25 @@ const SecondSection = () => {
       <section className="flex flex-col py-20  items-center justify-center bg-[#28282B]">
         <div className=" text-center  flex flex-col  items-center justify-center pb-20">
           <Image
-            src="/images/logo/logo-13.svg"
+            src="/images/logo.png"
             alt=""
-            width={100}
-            height={100}
-            className="w-60 h-60 mx-auto"
+            width={300}
+            height={160}
+            // className="w-60 h-60 mx-auto"
           />
 
           <div
             className="text-6xl flex justify-center md:text-6xl  text-white  md:px-20 pb-20 w-2/3
         "
           >
-            Try the #1 software in project and product management
+            Try the #1 software in Fan Engagement and Monetization.
           </div>
           <div className="text-xl bg-white p-6 rounded-lg w-40 items-center justify-center flex">
             Get started
           </div>
         </div>
 
-        <div className=" hidden md:flex pt-40 space-x-40 border-t  ">
+        <div className="hidden md:flex pt-40 space-x-40 border-t  ">
           <div className="">
             <Image
               src="/images/logo/logo-17.svg"
@@ -34,8 +34,8 @@ const SecondSection = () => {
             />
           </div>
 
-          <div className="flex-col space-y-6 flex">
-            <div className="text-xl text-gray-200 pb-10">Bird</div>
+          <div className=" flex-col space-y-6 flex">
+            <div className="text-xl text-gray-200 pb-10">Fandrum+</div>
 
             <div className="text-gray-200">Home</div>
             <div className="text-gray-200">Product</div>
@@ -55,17 +55,13 @@ const SecondSection = () => {
           </div>
 
           <div className="flex-col space-y-6 flex">
-            <div className="text-xl text-gray-200 pb-10">
-              Workflow Solutions
-            </div>
+            <div className="text-xl text-gray-200 pb-10">Solutions</div>
 
-            <div className="text-gray-200">Project Management</div>
-            <div className="text-gray-200">Goal Management</div>
-            <div className="text-gray-200">Increase Productvity</div>
-            <div className="text-gray-200">Work Management</div>
-            <div className="text-gray-200">Project Planning</div>
-
-            <div className="text-gray-200">To Do Lists</div>
+            <div className="text-gray-200">Analytics</div>
+            <div className="text-gray-200">Campaigns</div>
+            <div className="text-gray-200">Community</div>
+            <div className="text-gray-200">TRP Predictor</div>
+            <div className="text-gray-200">Brand Association</div>
           </div>
 
           <div className="flex-col space-y-6 flex">
@@ -82,10 +78,10 @@ const SecondSection = () => {
           <div className="flex-col space-y-6 flex">
             <div className="text-xl text-gray-200 pb-10">Learn</div>
 
-            <div className="text-gray-200">11 Leadership Styles</div>
+            <div className="text-gray-200">Archetypes</div>
 
-            <div className="text-gray-200">What are OKRs?</div>
-            <div className="text-gray-200">SMART GOALS</div>
+            <div className="text-gray-200">Tropes</div>
+            <div className="text-gray-200">Cliches</div>
           </div>
         </div>
       </section>
